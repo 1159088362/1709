@@ -1,0 +1,27 @@
+.common-tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  &:before {
+    content: '';
+    display: block;
+    width: 200%;
+    height: 1px;
+    background: #F00;
+    transform: scale(.5);
+    transform-origin: left top;
+  }
+  width: 100%;
+  ul {
+    display: flex;
+    li {
+      flex: 1;
+      width: 1px;
+      text-align: center;
+      .icon {
+        display: block;
+        font-size: 21px;
+      }
+    }
+  }
+}
